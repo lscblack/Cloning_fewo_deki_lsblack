@@ -31,29 +31,29 @@
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium')"
         class="h-[580px] w-full gap-16 flex items-center justify-center flex-col">
         <h1 class="text-white text-center font-bold text-[4em]">Alles gut, du buchst bei FeWo-direkt</h1>
-        <div class="bg-white rounde-lg p-4 flex gap-3 w-4/6">
-            <div class="border flex items-center w-full p-2">
+        <div class="bg-white rounded-lg p-4 flex gap-3 w-4/6 cursor-pointer top-0 sticky">
+            <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-location"></i>
-                <input placeholder="Wo soll’s hingehen?"/>
+                <input placeholder="Wo soll’s hingehen?"   class="w-full h-full outline-none p-1"/>
             </div>
-            <div class="border flex items-center w-full p-2">
-                <i class="fa fa-location"></i>
-                <input placeholder="Wo soll’s hingehen?"/>
-            </div>
-            <div class="border flex items-center w-full p-2">
-                <i class="fa fa-location"></i>
-                <div class="flex flex-col gap-3">
-                    <label>Daten</label>
-                    <input type="date" placeholder="Wo soll’s hingehen?"/>
+            <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
+                <i class="fa fa-calendar"></i>
+                <div class="flex flex-col gap-3 relative" onclick="getElementById('Newdate').click()">
+                    <label class="text-gray-400  font-bold absolute -top-5  left-1 text-xs">Daten</label>
+                    <input id="Newdate" type="date" class="absolute -bottom-4 left-1  outline-none"/>
                 </div>
             </div>
-            <div class="border flex items-center">
-                <i class="fa fa-location"></i>
-                <input placeholder="Wo soll’s hingehen?"/>
+            <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
+                <i class="fa fa-user"></i>
+                <input placeholder="Wo soll’s hingehen?" class="w-full h-full outline-none p-1"/>
+            </div>
+            <div class="flex items-center">
+                <button class="bg-black p-2 rounded-full text-white">Suchen</button>
             </div>
             
         </div>
     </section>
+    <section class="h-screen"></section>
 
 </body>
 
