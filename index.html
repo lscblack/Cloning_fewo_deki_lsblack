@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="text-sm">
+<body class="text-sm" id="body">
     <!----- The NAv Bar Emplemntation-->
     <nav class="flex gap-2 justify-between w-5/6 m-auto p-5 px-36">
         <div>
@@ -31,7 +32,7 @@
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium')"
         class="h-[580px] w-full gap-16 flex items-center justify-center flex-col">
         <h1 class="text-white text-center font-bold text-[4em]">Alles gut, du buchst bei FeWo-direkt</h1>
-        <div class="bg-white rounded-lg p-4 flex gap-3 w-4/6 cursor-pointer top-0 sticky">
+        <div class="bg-white rounded-lg p-4 flex gap-3 w-4/6 cursor-pointer top-0 sticky" id="scroll">
             <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-location"></i>
                 <input placeholder="Wo soll’s hingehen?"   class="w-full h-full outline-none p-1"/>
