@@ -5,28 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="text-sm">
     <!----- The NAv Bar Emplemntation-->
-    <nav class="flex gap-2 justify-between w-5/6 m-auto p-5">
+    <nav class="flex gap-2 justify-between w-5/6 m-auto p-5 px-36">
         <div>
             <img src="https://www.fewo-direkt.de/_dms/header/logo.svg?locale=de_DE&siteid=9003020&2&6f9ec7db" alt="Logo"
                 srcset="First 🎨">
         </div>
         <div class="flex gap-4 font-medium items-center">
-            <a href="#"  rel="noopener noreferrer" class="border rounded-full px-3 py-1 border-gray-300">App herunterladen</a>
-            <a href="#"  rel="noopener noreferrer">Reiseplaner</a>
-            <a href="#"  rel="noopener noreferrer">Unterkunft registrieren</a>
-            <a href="#"  rel="noopener noreferrer">Hilfe</a>
-            <a href="#"  rel="noopener noreferrer">Meine Reisen</a>
-            <a href="#"  rel="noopener noreferrer">Anmelden</a>
+            <a href="#" rel="noopener noreferrer" class="border rounded-full px-3 py-1 border-gray-300 hover:bg-blue-50"><i class="fa fa-download text-blue-600"></i> App
+                herunterladen</a>
+            <a href="#" rel="noopener noreferrer">Reiseplaner</a>
+            <a href="#" rel="noopener noreferrer">Unterkunft registrieren</a>
+            <a href="#" rel="noopener noreferrer">Hilfe</a>
+            <a href="#" rel="noopener noreferrer">Meine Reisen</a>
+            <a href="#" rel="noopener noreferrer">Anmelden</a>
         </div>
-        
+
     </nav>
     <!---- heror section-->
-    <section  style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium')" class="h-[500px] w-full">
-
+    <section
+        style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium')"
+        class="h-[580px] w-full gap-16 flex items-center justify-center flex-col">
+        <h1 class="text-white text-center font-bold text-[4em]">Alles gut, du buchst bei FeWo-direkt</h1>
+        <div class="bg-white rounde-lg p-4 flex gap-3 w-4/6">
+            <div class="border flex items-center w-full p-2">
+                <i class="fa fa-location"></i>
+                <input placeholder="Wo soll’s hingehen?"/>
+            </div>
+            <div class="border flex items-center w-full p-2">
+                <i class="fa fa-location"></i>
+                <input placeholder="Wo soll’s hingehen?"/>
+            </div>
+            <div class="border flex items-center w-full p-2">
+                <i class="fa fa-location"></i>
+                <div class="flex flex-col gap-3">
+                    <label>Daten</label>
+                    <input type="date" placeholder="Wo soll’s hingehen?"/>
+                </div>
+            </div>
+            <div class="border flex items-center">
+                <i class="fa fa-location"></i>
+                <input placeholder="Wo soll’s hingehen?"/>
+            </div>
+            
+        </div>
     </section>
 
 </body>
