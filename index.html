@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="text-sm" id="body">
@@ -17,9 +19,12 @@
                 srcset="First 🎨">
         </div>
         <!---Open Menu Icon-->
-        <i class="fa fa-bars text-2xl cursor-pointer absolute right-1 hidden max-lg:block" title="Menu" onclick="//toggleMenu()"></i>
+        <i class="fa fa-bars text-2xl cursor-pointer absolute right-1 hidden max-lg:block" title="Menu"
+            onclick="//toggleMenu()"></i>
         <div class="flex gap-4 font-medium items-center max-lg:hidden max-lg:bg-black " id="menu">
-            <a href="#" rel="noopener noreferrer" class="max-lg:w-full max-lg:block p-2  border rounded-full px-3 py-1 border-gray-300 hover:bg-blue-50"><i class="fa fa-download text-blue-600"></i> App
+            <a href="#" rel="noopener noreferrer"
+                class="max-lg:w-full max-lg:block p-2  border rounded-full px-3 py-1 border-gray-300 hover:bg-blue-50"><i
+                    class="fa fa-download text-blue-600"></i> App
                 herunterladen</a>
             <a href="#" rel="noopener noreferrer" class="max-lg:w-full max-lg:block p-2 ">Reiseplaner</a>
             <a href="#" rel="noopener noreferrer" class="max-lg:w-full max-lg:block p-2 ">Unterkunft registrieren</a>
@@ -33,49 +38,106 @@
     <section
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium')"
         class="h-[580px] w-full gap-16 flex items-center justify-center flex-col">
-        <h1 class="text-white text-center font-bold text-[4em] " style="word-spacing: 2px;line-height: 1;">Alles gut, du buchst bei FeWo-direkt</h1>
-        <div class="bg-gray-100 rounded-lg p-4 flex gap-3 w-4/6 cursor-pointer top-0 sticky max-lg:flex-col" id="scroll">
+        <h1 class="text-white text-center font-bold text-[4em] " style="word-spacing: 2px;line-height: 1;">Alles gut, du
+            buchst bei FeWo-direkt</h1>
+        <div class="bg-gray-100 rounded-lg p-4 flex gap-3 w-4/6 cursor-pointer top-0 sticky max-lg:flex-col z-10"
+            id="scroll">
             <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-location"></i>
-                <input placeholder="Wo soll’s hingehen?"   class="w-full h-full outline-none p-1 bg-gray-100 max-lg:p-3"/>
+                <input placeholder="Wo soll’s hingehen?"
+                    class="w-full h-full outline-none p-1 bg-gray-100 max-lg:p-3" />
             </div>
             <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-calendar"></i>
                 <div class="flex flex-col lg:gap-3 relative" onclick="getElementById('Newdate').click()">
                     <label class="text-gray-400  font-bold lg:absolute lg:-top-5  lg:left-1 text-xs">Daten</label>
-                    <input id="Newdate" type="date" class="lg:absolute lg:-bottom-4 lg:left-1  outline-none bg-gray-100"/>
+                    <input id="Newdate" type="date"
+                        class="lg:absolute lg:-bottom-4 lg:left-1  outline-none bg-gray-100" />
                 </div>
             </div>
             <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-user"></i>
-                <input placeholder="Wo soll’s hingehen?" class="w-full h-full outline-none p-1 max-lg:p-3 bg-gray-100"/>
+                <input placeholder="Wo soll’s hingehen?"
+                    class="w-full h-full outline-none p-1 max-lg:p-3 bg-gray-100" />
             </div>
             <div class="flex items-center max-lg:w-full">
                 <button class="bg-black p-2 rounded-full max-lg:w-full max-lg:p-3 text-white">Suchen</button>
             </div>
-            
+
         </div>
     </section>
-    <section class=" w-4/6 m-auto py-3 mt-14 h-screen overflow-hidden relative">
-        <h1 class="font-bold text-3xl mt-10 mb-3">Finde Unterkünfte ganz nach deinem Geschmack</h1>
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full overflow-hidden p-3">
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer " style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+    <section class="w-4/6 m-auto py-3 mt-14 z-0 h-screen overflow-hidden relative mb-10">
+        <h1 class="font-bold text-3xl mt-10">Finde Unterkünfte ganz nach deinem Geschmack</h1>
+        <div
+            class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full overflow-hidden p-3">
+            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer " style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer " style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer " style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer " style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
         </div>
-        
+
+        <div class="mt-10 rounded-lg h-[500px] p-2"
+            style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://forever.travel-assets.com/flex/flexmanager/mediaasset/929486-0_2-1dlvrbo.png?impolicy=fcrop&w=1200&h=514&p=1&q=high');">
+            <div class="px-3">
+                <h1 class="font-bold text-3xl mt-10 text-white">Stöbere in Wochenendtrips</h1>
+                <span class="text-white">Angebote für den Zeitraum:13. Dez.–15. Dez.</span>
+            </div>
+            <div
+                class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full overflow-hidden p-3">
+                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
+                    <div class="rounded-t-lg overflow-hidden">
+                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
+                    </div>
+                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                </div>
+                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
+                    <div class="rounded-t-lg overflow-hidden">
+                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
+                    </div>
+                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                </div>
+                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
+                    <div class="rounded-t-lg overflow-hidden">
+                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
+                    </div>
+                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                </div>
+                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
+                    <div class="rounded-t-lg overflow-hidden">
+                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
+                    </div>
+                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                </div>
+                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
+                    <div class="rounded-t-lg overflow-hidden">
+                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
+                    </div>
+                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 </body>
