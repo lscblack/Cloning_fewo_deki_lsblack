@@ -3,11 +3,11 @@ window.onscroll = (event) => {
     // Add any specific actions here
     const scrollDiv = document.getElementById("scroll");
     if (scrollPosition > 397) {
-        scrollDiv.classList.remove("sticky");
-        scrollDiv.classList.add("fixed");
+        scrollDiv.classList.remove("lg:sticky");
+        scrollDiv.classList.add("lg:fixed");
     } else {
-        scrollDiv.classList.remove("fixed");
-        scrollDiv.classList.add("top-0 sticky");
+        scrollDiv.classList.remove("lg:fixed");
+        scrollDiv.classList.add("lg:top-0 lg:sticky");
     }
 };
 // Toggle Menu
@@ -29,3 +29,30 @@ const GridImageOne = [
         "name":"",
     }
 ]
+$(document).ready(function(){
+    // Initialize the first carousel
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: { items: 2 },
+            600: { items: 3 },
+            1000: { items: 4 },
+            1200: { items: 5 }
+        }
+    });
+
+    // Initialize the second carousel
+    $(".owl-carousel2").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+            1200: { items: 4 }
+        }
+    });
+});

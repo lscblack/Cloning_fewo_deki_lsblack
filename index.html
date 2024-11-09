@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (Required by Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-----My Normal Css-->
     <script src="index.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,10 +50,11 @@
     <!---- heror section-->
     <section
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium')"
-        class="h-[580px] w-full gap-16 flex items-center justify-center flex-col">
-        <h1 class="text-white text-center font-bold text-[4em] " style="word-spacing: 2px;line-height: 1;">Alles gut, du
+        class="w-full gap-16 h-[580px] flex items-center justify-center flex-col">
+        <h1 class="text-white text-center font-bold text-[4em] max-lg:text-[2em]"
+            style="word-spacing: 2px;line-height: 1;">Alles gut, du
             buchst bei FeWo-direkt</h1>
-        <div class="bg-gray-100 rounded-lg p-4 flex gap-3 w-4/6 cursor-pointer top-0 sticky max-lg:flex-col z-10"
+        <div class="bg-gray-100 rounded-lg p-4 flex gap-3 w-4/6 max-lg:w-full cursor-pointer top-0 sticky max-lg:flex-col z-10"
             id="scroll">
             <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-location"></i>
@@ -50,7 +64,7 @@
             <div class="border flex items-center w-full p-2 border-gray-600 rounded-lg gap-3">
                 <i class="fa fa-calendar"></i>
                 <div class="flex flex-col lg:gap-3 relative" onclick="getElementById('Newdate').click()">
-                    <label class="text-gray-400  font-bold lg:absolute lg:-top-5  lg:left-1 text-xs">Daten</label>
+                    <label class="text-gray-800 lg:absolute lg:-top-5  lg:left-1 text-xs">Daten</label>
                     <input id="Newdate" type="date"
                         class="lg:absolute lg:-bottom-4 lg:left-1  outline-none bg-gray-100" />
                 </div>
@@ -66,77 +80,128 @@
 
         </div>
     </section>
-    <section class="w-4/6 m-auto py-3 mt-14 z-0 h-screen overflow-hidden relative mb-10">
-        <h1 class="font-bold text-3xl mt-10">Finde Unterkünfte ganz nach deinem Geschmack</h1>
-        <div
-            class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full overflow-hidden p-3">
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+    <section class="w-4/6 max-lg:w-11/12 m-auto py-3 mt-14 z-0  overflow-hidden relative mb-10">
+        <h1 class="font-bold text-3xl max-lg:text-xl mt-10">Finde Unterkünfte ganz nach deinem Geschmack</h1>
+        <!-- Owl Carousel Container -->
+        <div class="owl-carousel owl-theme p-3">
+            <div class="item h-[370px] max-lg:h-[200px] relative rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer"
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://town-n-country-living.com/wp-content/uploads/2023/06/craftsman-exterior.jpg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer"
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://myowncottage.ca/wp-content/uploads/2023/11/Cheap-Prefab-Houses-Ontario-Best-Beautiful-Affordable-Luxury-Cheap-Prefab-Home-Exterior-Unique-Designs-Ontario-Example.png.webp');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer"
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://i.pinimg.com/736x/08/6e/ba/086ebadc50d6cf34ad1aa800afb7b8bb.jpg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer"
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://fancyhouse-design.com/wp-content/uploads/2024/05/Simple-but-beautiful-house-with-solar-panels-promote-renewable-energy-use-and-lower-utility-bills.jpg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
-            <div class="h-[330px] relative rounded-lg w-full bg-black cursor-pointer "
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg');">
+            <div class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer"
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://www.proficiencyltd.co.uk/img/projects/stanhope-gardens/16.jpg');">
                 <h3 class="text-white font-bold bottom-2 left-2 absolute text-md">Title Of Lscblack</h3>
             </div>
         </div>
 
-        <div class="mt-10 rounded-lg h-[500px] p-2"
-            style="background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),  url('https://forever.travel-assets.com/flex/flexmanager/mediaasset/929486-0_2-1dlvrbo.png?impolicy=fcrop&w=1200&h=514&p=1&q=high');">
+
+        <div class="mt-10 rounded-lg bg p-2"
+            style="background-image:linear-gradient(rgba(78, 53, 53, 0.466), rgba(59, 46, 46, 0.3)),  url('https://forever.travel-assets.com/flex/flexmanager/mediaasset/929486-0_2-1dlvrbo.png?impolicy=fcrop&w=1200&h=514&p=1&q=high');">
             <div class="px-3">
                 <h1 class="font-bold text-3xl mt-10 text-white">Stöbere in Wochenendtrips</h1>
                 <span class="text-white">Angebote für den Zeitraum:13. Dez.–15. Dez.</span>
             </div>
-            <div
-                class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full overflow-hidden p-3">
-                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
-                    <div class="rounded-t-lg overflow-hidden">
-                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
+            <!-- Owl Carousel Container -->
+            <div class="owl-carousel owl-theme p-3">
+                <div class="item h-[370px] max-lg:h-[200px] relative rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer">
+                    <div class="text-white">
+                        <img src="https://myowncottage.ca/wp-content/uploads/2023/11/Cheap-Prefab-Houses-Ontario-Best-Beautiful-Affordable-Luxury-Cheap-Prefab-Home-Exterior-Unique-Designs-Ontario-Example.png.webp"
+                            alt="House Image" class="w-full h-[200px] object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <p class="text-xs">loData Minfgadkas as</p>
+                            <h3 class="text-lg font-bold text-gray-50 mb-1">Title Of Lscblack</h3>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-yellow-500"> <i class="fa fa-star"></i> </span>
+                                <span class="text-green-600 font-semibold">$280,000</span>
+                            </div>
+                            <p class="text-xs text-gray-50">A brief description<br/> of the property goes<br/> here. It
+                                highlights
+                                the main features and location advantages.</p>
+                        </div>
                     </div>
-                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
-                </div>
-                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
-                    <div class="rounded-t-lg overflow-hidden">
-                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
-                    </div>
-                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
-                </div>
-                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
-                    <div class="rounded-t-lg overflow-hidden">
-                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
-                    </div>
-                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
-                </div>
-                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
-                    <div class="rounded-t-lg overflow-hidden">
-                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
-                    </div>
-                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
-                </div>
-                <div class="h-[330px] relative rounded-lg w-full cursor-pointer ">
-                    <div class="rounded-t-lg overflow-hidden">
-                        <img src="https://media.wired.com/photos/66f5978e698012e5c0464f1d/master/w_2560%2Cc_limit/Disney+-Movie-Guide-Culture-INSIDE-OUT-2-ONLINE-USE-i170_130_pub.pub16.262.jpg" alt="" srcset="">
-                    </div>
-                    <h3 class="text-white font-bold  mt-2 ml-1 text-md">Title Of Lscblack</h3>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
-                </div>
-            </div>
-        </div>
+                    <div class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer">
+                        <div class="text-white">
+                            <img src="https://myowncottage.ca/wp-content/uploads/2023/11/Cheap-Prefab-Houses-Ontario-Best-Beautiful-Affordable-Luxury-Cheap-Prefab-Home-Exterior-Unique-Designs-Ontario-Example.png.webp"
+                                alt="House Image" class="w-full h-[200px] object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <p class="text-xs">loData Minfgadkas as</p>
+                                <h3 class="text-lg font-bold text-gray-50 mb-1">Title Of Lscblack</h3>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-yellow-500"> <i class="fa fa-star"></i> </span>
+                                    <span class="text-green-600 font-semibold">$280,000</span>
+                                </div>
+                                <p class="text-xs text-gray-50">A brief description<br/> of the property goes<br/> here. It
+                                    highlights
+                                    the main features and location advantages.</p>
+                            </div>
+                        </div>
+                        <div class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer">
+                            <div
+                                class="text-white">
+                                <img src="https://myowncottage.ca/wp-content/uploads/2023/11/Cheap-Prefab-Houses-Ontario-Best-Beautiful-Affordable-Luxury-Cheap-Prefab-Home-Exterior-Unique-Designs-Ontario-Example.png.webp"
+                                    alt="House Image" class="w-full h-[200px] object-cover rounded-t-lg">
+                                <div class="p-4">
+                                    <p class="text-xs">loData Minfgadkas as</p>
+                                    <h3 class="text-lg font-bold text-gray-50 mb-1">Title Of Lscblack</h3>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-yellow-500"> <i class="fa fa-star"></i> </span>
+                                        <span class="text-green-600 font-semibold">$280,000</span>
+                                    </div>
+                                    <p class="text-xs text-gray-50">A brief description<br/> of the property goes<br/> here. It
+                                        highlights
+                                        the main features and location advantages.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer">
+                                <div
+                                    class="text-white">
+                                    <img src="https://myowncottage.ca/wp-content/uploads/2023/11/Cheap-Prefab-Houses-Ontario-Best-Beautiful-Affordable-Luxury-Cheap-Prefab-Home-Exterior-Unique-Designs-Ontario-Example.png.webp"
+                                        alt="House Image" class="w-full h-[200px] object-cover rounded-t-lg">
+                                    <div class="p-4">
+                                        <p class="text-xs">loData Minfgadkas as</p>
+                                        <h3 class="text-lg font-bold text-gray-50 mb-1">Title Of Lscblack</h3>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="text-yellow-500"> <i class="fa fa-star"></i> </span>
+                                            <span class="text-green-600 font-semibold">$280,000</span>
+                                        </div>
+                                        <p class="text-xs text-gray-50">A brief description<br/> of the property goes<br/> here.
+                                            It highlights
+                                            the main features and location advantages.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="item h-[370px] relative max-lg:h-[200px] rounded-lg w-full bg-[rgba(59, 46, 46, 0.3)] cursor-pointer">
+                                    <div
+                                        class="text-white">
+                                        <img src="https://myowncottage.ca/wp-content/uploads/2023/11/Cheap-Prefab-Houses-Ontario-Best-Beautiful-Affordable-Luxury-Cheap-Prefab-Home-Exterior-Unique-Designs-Ontario-Example.png.webp"
+                                            alt="House Image" class="w-full h-[200px] object-cover rounded-t-lg">
+                                        <div class="p-4">
+                                            <p class="text-xs">loData Minfgadkas as</p>
+                                            <h3 class="text-lg font-bold text-gray-50 mb-1">Title Of Lscblack</h3>
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span class="text-yellow-500"> <i class="fa fa-star"></i> </span>
+                                                <span class="text-green-600 font-semibold">$280,000</span>
+                                            </div>
+                                            <p class="text-xs text-gray-50">A brief description<br/> of the property goes<br/>
+                                                here. It highlights
+                                                the main features and location advantages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
     </section>
 
